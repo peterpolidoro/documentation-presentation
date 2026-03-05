@@ -1,5 +1,7 @@
 # GitHub Pages talk template: “Documentation as a Deliverable”
 
+**Live site (GitHub Pages):** https://peterpolidoro.github.io/documentation-presentation/
+
 This repo is a **starter template** for publishing a short talk as a **series of web pages** using **GitHub Pages**.
 
 The core idea is also the message of the talk:
