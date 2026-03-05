@@ -1,0 +1,72 @@
+{%- comment -%}
+  Navigation for the talk.
+  Order is defined in _data/deck.yml.
+{%- endcomment -%}
+
+{%- assign deck = site.data.deck -%}
+{%- assign current_index = 0 -%}
+
+{%- for item in deck -%}
+  {%- if item.url == page.url -%}
+    {%- assign current_index = forloop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign deck_size = deck | size -%}
+{%- assign prev_index = current_index | minus: 1 -%}
+{%- assign next_index = current_index | plus: 1 -%}
+
+{%- assign prev = nil -%}
+{%- assign next = nil -%}
+{%- if prev_index >= 0 -%}
+  {%- assign prev = deck[prev_index] -%}
+{%- endif -%}
+{%- if next_index < deck_size -%}
+  {%- assign next = deck[next_index] -%}
+{%- endif -%}
+
+<nav class="deck-nav" aria-label="Talk navigation">
+  <div class="deck-nav__row">
+    <div class="deck-nav__tabs" role="navigation" aria-label="Sections">
+      {%- for item in deck -%}
+        {%- assign href = item.url | relative_url -%}
+        {%- if item.url == page.url -%}
+          <a class="deck-nav__tab is-active" href="{{ href }}" aria-current="page">{{ item.label }}</a>
+        {%- else -%}
+          <a class="deck-nav__tab" href="{{ href }}">{{ item.label }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    <div class="deck-nav__hint" aria-hidden="true">← / → to navigate</div>
+  </div>
+
+  <div class="deck-nav__pager">
+    {%- if prev and prev.url -%}
+      <a class="deck-nav__btn" href="{{ prev.url | relative_url }}" rel="prev">← {{ prev.label }}</a>
+    {%- else -%}
+      <span class="deck-nav__btn is-disabled">←</span>
+    {%- endif -%}
+
+    <span class="deck-nav__progress">{{ current_index | plus: 1 }} / {{ deck | size }}</span>
+
+    {%- if next and next.url -%}
+      <a class="deck-nav__btn" href="{{ next.url | relative_url }}" rel="next">{{ next.label }} →</a>
+    {%- else -%}
+      <span class="deck-nav__btn is-disabled">→</span>
+    {%- endif -%}
+  </div>
+
+  <script>
+    // Keyboard navigation (left/right arrow). Keeps the site dependency-free.
+    (function () {
+      const prev = {{ prev.url | relative_url | jsonify }};
+      const next = {{ next.url | relative_url | jsonify }};
+      document.addEventListener('keydown', (e) => {
+        const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+        if (tag === 'input' || tag === 'textarea' || e.isComposing) return;
+        if (e.key === 'ArrowLeft' && prev) window.location.href = prev;
+        if (e.key === 'ArrowRight' && next) window.location.href = next;
+      });
+    })();
+  </script>
+</nav>

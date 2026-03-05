@@ -1,50 +1,26 @@
 ---
-layout: default
 title: LLMs and documentation
 permalink: /llms/
 ---
 
-[Home]({{ '/' | relative_url }}) · [Why]({{ '/why/' | relative_url }}) · [MVD checklist]({{ '/mvd/' | relative_url }}) · [Open formats]({{ '/open-formats/' | relative_url }}) · [CAD files]({{ '/cad/' | relative_url }}) · [LLMs]({{ '/llms/' | relative_url }}) · [Templates]({{ '/templates/' | relative_url }}) · [Balance]({{ '/balance/' | relative_url }})
-
----
-
-
 # LLMs and documentation
 
-LLMs changed *how* we create and consume documentation — but they **did not** remove the need for it.
+LLMs made it cheaper to **format and summarize** information.
+They did *not* remove the need to **capture ground truth**.
 
-## What LLMs are great at
-
-- turning rough notes into clean READMEs
-- producing checklists and troubleshooting trees
+## What LLMs help with
+- turning notes into clean READMEs
+- generating checklists + troubleshooting guides
 - summarizing long documents
-- generating consistent formatting and tone
 
-**LLMs reduce the cost of “packaging” information.**
+## What LLMs can’t do for you
+- take photos you didn’t take
+- recover a revision ID you never wrote down
+- infer wiring, settings, or calibration steps you never captured
 
-## What LLMs cannot do (without real inputs)
+**Write for humans first**, but make it machine-friendly:
+- open text formats (Markdown/CSV)
+- clear headings + short sections
+- numbered steps + **expected results**
 
-- infer wiring you never captured
-- recreate calibration steps you never wrote down
-- guess which revision was “the one that worked”
-- replace photos you didn’t take before closing the enclosure
-
-**If the ground truth is missing, the model will fill gaps — often confidently.**
-
-## So: should documentation be “for LLMs” too?
-
-Write for humans first — and make it machine-friendly by default.
-
-Machine-friendly usually means:
-- plain text formats (Markdown/CSV/etc.)
-- short sections with clear headings
-- numbered procedures
-- explicit values and expected results
-- captions/alt text for images (so content is searchable)
-
-## A useful mental model
-
-- Docs are your **source of truth**
-- LLMs are an **accelerator** that makes your truth easier to access
-
-➡️ Next: [Templates]({ '/templates/' | relative_url })
+> Docs are the source of truth. LLMs are an interface to it.

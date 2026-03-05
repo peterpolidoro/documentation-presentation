@@ -2,3 +2,12 @@ title: Documentation as a Deliverable
 description: A 10-minute talk + practical templates for engineers and scientists (open formats, reproducibility, handoff)
 theme: jekyll-theme-cayman
 markdown: kramdown
+
+# Treat these pages as a presentation.
+# (Handout details live in the repository README.)
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
