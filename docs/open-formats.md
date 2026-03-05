@@ -4,7 +4,7 @@ title: Open file formats
 permalink: /open-formats/
 ---
 
-[Home]({{ '/' | relative_url }}) · [Why]({{ '/why/' | relative_url }}) · [MVD checklist]({{ '/mvd/' | relative_url }}) · [Open formats]({{ '/open-formats/' | relative_url }}) · [LLMs]({{ '/llms/' | relative_url }}) · [Templates]({{ '/templates/' | relative_url }}) · [Balance]({{ '/balance/' | relative_url }})
+[Home]({{ '/' | relative_url }}) · [Why]({{ '/why/' | relative_url }}) · [MVD checklist]({{ '/mvd/' | relative_url }}) · [Open formats]({{ '/open-formats/' | relative_url }}) · [CAD files]({{ '/cad/' | relative_url }}) · [LLMs]({{ '/llms/' | relative_url }}) · [Templates]({{ '/templates/' | relative_url }}) · [Balance]({{ '/balance/' | relative_url }})
 
 ---
 
@@ -47,7 +47,16 @@ Just don’t let them be the **only** place the knowledge lives.
 | Photos | `.jpg`, `.png` | universal viewing + easy sharing |
 | Presentations | **web pages** (HTML/Markdown) + `.odp` + PDF export | no license to view; editable via open tools |
 | CAD exchange | `.step` / `.stp` (and 2D PDF drawings) | durable interchange across CAD tools |
+| CAD visualization / review | `.glb` (glTF) | lightweight viewing, Blender/web, fast sharing |
 | Experimental data | `.csv` or domain standard (HDF5/NetCDF/etc.) | long-term reuse |
+
+## CAD exports (Inventor/Vault friendly)
+
+If your team uses a proprietary CAD + PDM stack, you can still keep downstream collaboration open:
+- export **STEP** for engineering interchange
+- export **GLB (glTF)** for viewing/review
+
+See: [CAD exports: STEP vs GLB]({{ '/cad/' | relative_url }})
 
 ## Presentations without PowerPoint
 
