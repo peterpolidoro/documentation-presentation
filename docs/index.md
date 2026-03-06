@@ -1,18 +1,8 @@
 ---
-title: Documentation as a Deliverable
+title: Makers
 permalink: /
 ---
 
-# Documentation as a Deliverable
+# We are all makers, and we love building quality tools for others.
 
-**If I disappeared tomorrow: could you rebuild this safely and correctly?**
-
-To make work repeatable, you need:
-
-- **Evidence** of what exists (photos, measurements, revisions)
-- **Instructions** to reproduce and verify (what, why, how, expected results)
-
-> The hardware and software are artifacts — the documentation is the product.
-
-**Handout / details:** the repository README (templates, formats, policies):
-[{{ site.github.repository_name }}]({{ site.github.repository_url }})
+<p class="slide-subhead">This talk is about one way to make that quality last.</p>

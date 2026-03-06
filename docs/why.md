@@ -1,21 +1,10 @@
 ---
-title: Why documentation matters
+title: The job I thought I had
 permalink: /why/
 ---
 
-# Why documentation matters
+# I used to think our job was to deliver a high-quality rig or instrument.
 
-Documentation turns a one-off build into something that can be:
+<p class="slide-subhead">Design &rarr; build &rarr; hand off</p>
 
-- **reproduced** (by the next person)
-- **debugged** (without archaeology)
-- **trusted** (safety, traceability, audits)
-- **improved** (iterations don’t reset to zero)
-
-The trap is waiting until the end:
-
-- you forget *why* decisions were made
-- you lose photos and intermediate evidence
-- you miss the “gotchas” that made it work
-
-> Start with a README on day 1. Add as you go.
+<p class="slide-turn">Over time I realized the real deliverable is something more durable than a single build.</p>

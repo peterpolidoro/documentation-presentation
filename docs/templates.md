@@ -1,14 +1,15 @@
 ---
-title: Templates
+title: Definition of done
 permalink: /templates/
 ---
 
-# Templates (keep it boring)
+# Done means someone else can:
 
-Standard templates reduce friction and make handoff predictable.
+<ul class="slide-points">
+  <li>open it</li>
+  <li>understand it</li>
+  <li>rebuild it</li>
+  <li>modify it</li>
+</ul>
 
-- **README skeleton** (what / where / how / verify)
-- **Photo checklist** (before closing panels)
-- **Definition of Done** (docs included)
-
-Copy/paste versions live in the repository README.
+<p class="slide-turn">Deliver the meal. Keep the recipe.</p>

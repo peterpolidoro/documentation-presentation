@@ -1,22 +1,27 @@
 ---
-title: Open file formats
+title: Open formats
 permalink: /open-formats/
 ---
 
-# Open file formats (avoid lock‑in)
+# A recipe only helps if other people can open it.
 
-> If someone needs to buy a license just to **open** your documentation, it isn’t documentation.
+<p class="slide-subhead">Use open formats for shared knowledge.</p>
 
-**Two‑layer strategy:** keep your native files, but always publish an open export **beside** them.
-
-**Good defaults:**
-
-- Notes / procedures: **Markdown** (`.md`) or **text** (`.txt`)
-- Tables / BOM: **CSV** (`.csv`)
-- Diagrams: **SVG** (`.svg`)
-- Photos: **JPG/PNG**
-- Drawings: **PDF**
-- CAD exchange: **STEP** (`.step/.stp`)
-- CAD preview: **GLB** (`.glb`)
-
-For the handout version (pros/cons, policies, and examples), see the repository README.
+<div class="card-grid">
+  <div class="card">
+    <h2>Docs</h2>
+    <p>Text or Markdown</p>
+  </div>
+  <div class="card">
+    <h2>Tables</h2>
+    <p>CSV</p>
+  </div>
+  <div class="card">
+    <h2>Drawings</h2>
+    <p>PDF</p>
+  </div>
+  <div class="card">
+    <h2>CAD</h2>
+    <p>STEP for truth, GLB for preview</p>
+  </div>
+</div>

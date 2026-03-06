@@ -1,17 +1,12 @@
 ---
-title: The happy medium
+title: Right-sized documentation
 permalink: /balance/
 ---
 
-# The happy medium
+# Don't write the whole cookbook before tasting the dish.
 
-Two failure modes:
-
-- **Too little** documentation → nobody can reproduce or maintain it
-- **Too much, too early** → you over‑specify before users touch a prototype
-
-A better pattern for exploratory work:
-
-1. **Prototype early**
-2. **Document what you learned** (what worked, what failed, why)
-3. **Add formality as uncertainty drops**
+<ul class="slide-points">
+  <li><strong>Too little:</strong> nobody can repeat it.</li>
+  <li><strong>Too much too early:</strong> you document the wrong thing.</li>
+  <li><strong>Better:</strong> prototype early, document what you learn, then add formality as uncertainty drops.</li>
+</ul>

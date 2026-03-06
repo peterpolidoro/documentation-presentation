@@ -7,14 +7,21 @@
 
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
 
-  <body class="deck">
+  <body class="deck page-{{ page.title | slugify }}">
+    {% assign readme_url = site.readme_url | default: site.repository_url | default: site.github.repository_url %}
+
     <header class="page-header" role="banner">
       <div class="page-header__inner">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <div class="site-tagline">10‑minute talk for engineers & scientists</div>
+        <div class="page-header__brand">
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <div class="site-tagline">Slides on the site · handout in the README</div>
+        </div>
+        {% if readme_url %}
+          <a class="site-link" href="{{ readme_url }}">Handout / README</a>
+        {% endif %}
       </div>
     </header>
 

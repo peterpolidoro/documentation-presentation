@@ -1,5 +1,7 @@
 title: Documentation as a Deliverable
-description: A 10-minute talk + practical templates for engineers and scientists (open formats, reproducibility, handoff)
+description: A 10-minute talk + practical templates for engineers and scientists
+repository_url: https://github.com/peterpolidoro/documentation-presentation
+readme_url: https://github.com/peterpolidoro/documentation-presentation#readme
 theme: jekyll-theme-cayman
 markdown: kramdown
 

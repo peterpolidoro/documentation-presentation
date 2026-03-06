@@ -1,18 +1,25 @@
 ---
-title: Minimum Viable Documentation (MVD)
+title: The recipe card
 permalink: /mvd/
 ---
 
-# Minimum Viable Documentation (MVD)
+# In our work, the recipe is documentation.
 
-If you do nothing else, capture these **7** things:
-
-1. **What it is** (1 paragraph)
-2. **Photos** (overview + inside-before-close)
-3. **BOM** (CSV; critical parts highlighted)
-4. **Interfaces** (power, wiring/pinout, optics path)
-5. **Build steps** (order + tools + gotchas)
-6. **Verify** (test + expected numbers)
-7. **Versions + issues** (CAD rev, firmware/software, configs, known problems)
-
-> “Done” includes docs: someone else can repeat it, or you wrote why not.
+<div class="card-grid">
+  <div class="card">
+    <h2>Ingredients</h2>
+    <p>BOM, parts, files, versions</p>
+  </div>
+  <div class="card">
+    <h2>Steps</h2>
+    <p>Build, setup, calibration</p>
+  </div>
+  <div class="card">
+    <h2>Settings</h2>
+    <p>Constants, tolerances, revisions</p>
+  </div>
+  <div class="card">
+    <h2>Done test</h2>
+    <p>How we know it works</p>
+  </div>
+</div>
